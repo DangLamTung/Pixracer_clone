@@ -62,9 +62,9 @@ Text GLabel 1150 3000 0    50   Input ~ 0
 OSC1+
 Text GLabel 1150 3100 0    50   Input ~ 0
 OSC1-
-Text GLabel 3150 3900 2    50   Input ~ 0
+Text GLabel 3150 2500 2    50   Input ~ 0
 UART1_TX
-Text GLabel 3150 4000 2    50   Input ~ 0
+Text GLabel 3150 2600 2    50   Input ~ 0
 UART1_RX
 Text GLabel 3100 3000 2    50   Input ~ 0
 SWCLK
@@ -88,16 +88,12 @@ Text GLabel 1200 6300 0    50   Input ~ 0
 TIM3_CH2
 Text GLabel 1200 6200 0    50   Input ~ 0
 TIM3_CH1
-Text GLabel 4350 3950 0    50   Input ~ 0
+Text GLabel 3200 5200 2    50   Input ~ 0
 LED1
-Text GLabel 4350 4150 0    50   Input ~ 0
+Text GLabel 3200 5000 2    50   Input ~ 0
 LED2
-Text GLabel 4350 4050 0    50   Input ~ 0
+Text GLabel 3200 5100 2    50   Input ~ 0
 LED3
-Text GLabel 4650 2850 0    50   Input ~ 0
-UART4_TX
-Text GLabel 4650 2950 0    50   Input ~ 0
-UART4_RX
 Text GLabel 1200 2000 0    50   Input ~ 0
 VCAP_1
 Text GLabel 1200 2100 0    50   Input ~ 0
@@ -110,22 +106,14 @@ Wire Wire Line
 	2300 6800 2300 7150
 Wire Wire Line
 	2200 6800 2200 7150
-Text GLabel 4150 2950 0    50   Input ~ 0
-SBUS
-Text GLabel 3150 3600 2    50   Input ~ 0
-SPI3_SCK
-Text GLabel 3150 3700 2    50   Input ~ 0
+Text GLabel 3700 3850 2    50   Input ~ 0
 SPI3_MISO
-Text GLabel 3150 3800 2    50   Input ~ 0
+Text GLabel 3700 3950 2    50   Input ~ 0
 SPI3_MOSI
-Wire Wire Line
-	4650 2950 4150 2950
-Wire Notes Line
-	750  700  3400 700 
 Wire Notes Line
 	11150 1850 11150 650 
 Wire Wire Line
-	4450 3950 4350 3950
+	3100 5200 3200 5200
 NoConn ~ 1700 1400
 Wire Wire Line
 	2200 7150 2300 7150
@@ -181,10 +169,10 @@ Wire Wire Line
 Text GLabel 3200 1800 2    50   Input ~ 0
 BATT_VOLT_SENSE
 Wire Wire Line
-	4350 4150 4450 4150
+	3200 5000 3100 5000
 Wire Wire Line
-	4350 4050 4450 4050
-Text GLabel 3250 5700 2    50   Input ~ 0
+	3200 5100 3100 5100
+Text GLabel 1150 6100 0    50   Input ~ 0
 SD_CS
 Text GLabel 3250 6000 2    50   Input ~ 0
 SDIO2
@@ -408,9 +396,31 @@ Wire Wire Line
 Wire Wire Line
 	1300 6500 1200 6500
 Wire Wire Line
-	3100 5700 3250 5700
+	1300 6100 1150 6100
 Text GLabel 3250 4500 2    50   Input ~ 0
 EXTERNAL_MEM_CS
 Wire Wire Line
 	3100 4500 3250 4500
+Text GLabel 3700 3750 2    50   Input ~ 0
+SPI3_SCK
+Wire Wire Line
+	3100 2500 3150 2500
+Wire Wire Line
+	3100 2600 3150 2600
+Text GLabel 3250 5600 2    50   Input ~ 0
+UART6_TX
+Text GLabel 3250 5700 2    50   Input ~ 0
+UART6_RX
+Wire Wire Line
+	3100 5600 3250 5600
+Wire Wire Line
+	3100 5700 3250 5700
+Text GLabel 3250 4400 2    50   Input ~ 0
+I2C2_SDA
+Text GLabel 3250 4300 2    50   Input ~ 0
+I2C2_SCl
+Wire Wire Line
+	3100 4300 3250 4300
+Wire Wire Line
+	3100 4400 3250 4400
 $EndSCHEMATC

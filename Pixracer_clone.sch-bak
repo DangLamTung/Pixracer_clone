@@ -62,9 +62,9 @@ Text GLabel 1150 3000 0    50   Input ~ 0
 OSC1+
 Text GLabel 1150 3100 0    50   Input ~ 0
 OSC1-
-Text GLabel 3150 3900 2    50   Input ~ 0
+Text GLabel 3150 2500 2    50   Input ~ 0
 UART1_TX
-Text GLabel 3150 4000 2    50   Input ~ 0
+Text GLabel 3150 2600 2    50   Input ~ 0
 UART1_RX
 Text GLabel 3100 3000 2    50   Input ~ 0
 SWCLK
@@ -88,16 +88,12 @@ Text GLabel 1200 6300 0    50   Input ~ 0
 TIM3_CH2
 Text GLabel 1200 6200 0    50   Input ~ 0
 TIM3_CH1
-Text GLabel 3200 4400 2    50   Input ~ 0
+Text GLabel 3200 5200 2    50   Input ~ 0
 LED1
-Text GLabel 4050 3850 2    50   Input ~ 0
+Text GLabel 3200 5000 2    50   Input ~ 0
 LED2
-Text GLabel 4350 4050 0    50   Input ~ 0
+Text GLabel 3200 5100 2    50   Input ~ 0
 LED3
-Text GLabel 5000 6150 0    50   Input ~ 0
-UART4_TX
-Text GLabel 5000 6250 0    50   Input ~ 0
-UART4_RX
 Text GLabel 1200 2000 0    50   Input ~ 0
 VCAP_1
 Text GLabel 1200 2100 0    50   Input ~ 0
@@ -110,26 +106,14 @@ Wire Wire Line
 	2300 6800 2300 7150
 Wire Wire Line
 	2200 6800 2200 7150
-Text GLabel 4500 6250 0    50   Input ~ 0
-SBUS
-Text GLabel 3150 3600 2    50   Input ~ 0
-SPI3_SCK
-Text GLabel 3150 3700 2    50   Input ~ 0
+Text GLabel 3700 3850 2    50   Input ~ 0
 SPI3_MISO
-Text GLabel 3150 3800 2    50   Input ~ 0
+Text GLabel 3700 3950 2    50   Input ~ 0
 SPI3_MOSI
-Text GLabel 4950 5450 0    50   Input ~ 0
-ADC1
-Text GLabel 5000 6350 0    50   Input ~ 0
-UART5_TX
-Wire Wire Line
-	5000 6250 4500 6250
-Wire Notes Line
-	750  700  3400 700 
 Wire Notes Line
 	11150 1850 11150 650 
 Wire Wire Line
-	3100 4400 3200 4400
+	3100 5200 3200 5200
 NoConn ~ 1700 1400
 Wire Wire Line
 	2200 7150 2300 7150
@@ -185,10 +169,10 @@ Wire Wire Line
 Text GLabel 3200 1800 2    50   Input ~ 0
 BATT_VOLT_SENSE
 Wire Wire Line
-	4050 3850 3950 3850
+	3200 5000 3100 5000
 Wire Wire Line
-	4350 4050 4450 4050
-Text GLabel 4650 2600 2    50   Input ~ 0
+	3200 5100 3100 5100
+Text GLabel 1150 6100 0    50   Input ~ 0
 SD_CS
 Text GLabel 3250 6000 2    50   Input ~ 0
 SDIO2
@@ -223,8 +207,6 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 	1    2200 4000
 	1    0    0    -1  
 $EndComp
-Text GLabel 4950 5250 0    50   Input ~ 0
-UART5_RX
 Wire Wire Line
 	2300 7150 2400 7150
 Text GLabel 3250 6200 2    50   Input ~ 0
@@ -341,22 +323,22 @@ Wire Wire Line
 	3100 2700 3150 2700
 Wire Wire Line
 	3100 2800 3150 2800
-Text GLabel 3250 6400 2    50   Input ~ 0
+Text GLabel 3250 3400 2    50   Input ~ 0
 ICM20948_DRDY
-Text GLabel 3250 6500 2    50   Input ~ 0
+Text GLabel 3250 3500 2    50   Input ~ 0
 ICM20948_CS
-Text GLabel 3350 3500 2    50   Input ~ 0
+Text GLabel 3350 3300 2    50   Input ~ 0
 LSM6D3_CS
 Wire Wire Line
-	3350 3500 3100 3500
-Text GLabel 3250 3400 2    50   Input ~ 0
+	3350 3300 3100 3300
+Text GLabel 3250 5500 2    50   Input ~ 0
 MPU9250_DRDY
 Wire Wire Line
-	3250 3400 3100 3400
-Text GLabel 3250 3300 2    50   Input ~ 0
+	3250 5500 3100 5500
+Text GLabel 3250 5400 2    50   Input ~ 0
 MPU9250_CS
 Wire Wire Line
-	3250 3300 3100 3300
+	3250 5400 3100 5400
 Wire Wire Line
 	2200 7150 2100 7150
 Wire Wire Line
@@ -368,7 +350,7 @@ Connection ~ 2100 7150
 Wire Wire Line
 	2100 7150 2000 7150
 Wire Wire Line
-	3100 6500 3250 6500
+	3100 3500 3250 3500
 Text GLabel 3200 1900 2    50   Input ~ 0
 BATT_CURRENT_SENSE
 Wire Wire Line
@@ -386,7 +368,7 @@ Wire Wire Line
 Wire Wire Line
 	3100 4600 3250 4600
 Wire Wire Line
-	3100 6400 3250 6400
+	3100 3400 3250 3400
 Text GLabel 1150 4700 0    50   Input ~ 0
 TIM1_CH4
 Wire Wire Line
@@ -413,4 +395,24 @@ Wire Wire Line
 	1300 6400 1200 6400
 Wire Wire Line
 	1300 6500 1200 6500
+Wire Wire Line
+	1300 6100 1150 6100
+Text GLabel 3250 4500 2    50   Input ~ 0
+EXTERNAL_MEM_CS
+Wire Wire Line
+	3100 4500 3250 4500
+Text GLabel 3700 3750 2    50   Input ~ 0
+SPI3_SCK
+Wire Wire Line
+	3100 2500 3150 2500
+Wire Wire Line
+	3100 2600 3150 2600
+Text GLabel 3250 5600 2    50   Input ~ 0
+UART6_TX
+Text GLabel 3250 5700 2    50   Input ~ 0
+UART6_RX
+Wire Wire Line
+	3100 5600 3250 5600
+Wire Wire Line
+	3100 5700 3250 5700
 $EndSCHEMATC
