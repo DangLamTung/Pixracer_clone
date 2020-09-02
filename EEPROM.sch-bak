@@ -1,0 +1,132 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 10 10
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Memory_EEPROM:24LC512 U?
+U 1 1 5F5BE275
+P 4300 2850
+AR Path="/5F275508/5F5BE275" Ref="U?"  Part="1" 
+AR Path="/5F5BE275" Ref="U?"  Part="1" 
+F 0 "U?" H 4300 3331 50  0000 C CNN
+F 1 "24LC512" H 4300 3240 50  0000 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.81mm" H 4300 2850 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21754M.pdf" H 4300 2850 50  0001 C CNN
+	1    4300 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F5BE27B
+P 4300 3300
+AR Path="/5F275508/5F5BE27B" Ref="#PWR?"  Part="1" 
+AR Path="/5F5BE27B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4300 3050 50  0001 C CNN
+F 1 "GND" H 4305 3127 50  0000 C CNN
+F 2 "" H 4300 3300 50  0001 C CNN
+F 3 "" H 4300 3300 50  0001 C CNN
+	1    4300 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5F5BE281
+P 4300 2300
+AR Path="/5F275508/5F5BE281" Ref="#PWR?"  Part="1" 
+AR Path="/5F5BE281" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4300 2150 50  0001 C CNN
+F 1 "VCC" H 4315 2473 50  0000 C CNN
+F 2 "" H 4300 2300 50  0001 C CNN
+F 3 "" H 4300 2300 50  0001 C CNN
+	1    4300 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 2750 3900 2850
+Wire Wire Line
+	3900 3300 4300 3300
+Connection ~ 3900 2850
+Wire Wire Line
+	3900 2850 3900 2950
+Connection ~ 3900 2950
+Wire Wire Line
+	3900 2950 3900 3300
+Wire Wire Line
+	4300 3150 4300 3300
+Connection ~ 4300 3300
+Wire Wire Line
+	4300 2300 4300 2350
+Wire Wire Line
+	4700 2750 4900 2750
+$Comp
+L Device:R R?
+U 1 1 5F5BE291
+P 4900 2600
+AR Path="/5F275508/5F5BE291" Ref="R?"  Part="1" 
+AR Path="/5F5BE291" Ref="R?"  Part="1" 
+F 0 "R?" H 4970 2646 50  0000 L CNN
+F 1 "R" H 4970 2555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4830 2600 50  0001 C CNN
+F 3 "~" H 4900 2600 50  0001 C CNN
+	1    4900 2600
+	1    0    0    -1  
+$EndComp
+Connection ~ 4900 2750
+Wire Wire Line
+	4900 2750 4950 2750
+$Comp
+L Device:R R?
+U 1 1 5F5BE299
+P 5150 2700
+AR Path="/5F275508/5F5BE299" Ref="R?"  Part="1" 
+AR Path="/5F5BE299" Ref="R?"  Part="1" 
+F 0 "R?" H 5220 2746 50  0000 L CNN
+F 1 "R" H 5220 2655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5080 2700 50  0001 C CNN
+F 3 "~" H 5150 2700 50  0001 C CNN
+	1    5150 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 2850 5150 2850
+Wire Wire Line
+	4950 2750 4950 2950
+Wire Wire Line
+	4950 2950 5450 2950
+Wire Wire Line
+	5150 2850 5450 2850
+Connection ~ 5150 2850
+Wire Wire Line
+	4900 2450 5050 2450
+Wire Wire Line
+	5150 2450 5150 2550
+Wire Wire Line
+	5050 2450 5050 2350
+Wire Wire Line
+	5050 2350 4300 2350
+Connection ~ 5050 2450
+Wire Wire Line
+	5050 2450 5150 2450
+Connection ~ 4300 2350
+Wire Wire Line
+	4300 2350 4300 2550
+Text GLabel 5450 2950 2    50   Input ~ 0
+I2C_SDA
+Text GLabel 5450 2850 2    50   Input ~ 0
+I2C_SCl
+Wire Wire Line
+	4700 2950 4700 3300
+Wire Wire Line
+	4700 3300 4300 3300
+$EndSCHEMATC
