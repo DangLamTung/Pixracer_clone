@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name Pixracer_clone)(type KiCad)(uri ${KIPRJMOD}/Pixracer_clone.pretty)(options "")(descr ""))
+)

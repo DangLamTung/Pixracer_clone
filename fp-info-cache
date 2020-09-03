@@ -1,4 +1,4 @@
-18634840826366580
+18628447995154011
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -2267,34 +2267,6 @@ SMD 8540
 0
 4
 4
-C21_lib
-PinSocket_1x05_P2.54mm_Horizontal
-Through hole angled socket strip, 1x05, 2.54mm pitch, 8.51mm socket length, single row (from Kicad 4.0.7), script generated
-Through hole angled socket strip THT 1x05 2.54mm single row
-0
-7
-7
-C21_lib
-SD_card_mua_duoc
-
-
-0
-15
-9
-C21_lib
-SUNTECH_ST-TF-003A
-
-
-0
-13
-13
-C21_lib
-pif_logo
-
-
-0
-0
-0
 Calibration_Scale
 Gauge_10mm_Type1_CopperTop
 Gauge, Massstab, 10mm, CopperTop, Type 1,
@@ -71742,6 +71714,13 @@ TO-264-5 Vertical RM 3.81mm
 0
 5
 5
+Pixracer_clone
+SUNTECH_ST-TF-003A
+
+
+0
+13
+13
 Potentiometer_SMD
 Potentiometer_ACP_CA6-VSMD_Vertical
 Potentiometer, vertical, ACP CA6-VSMD, http://www.acptechnologies.com/wp-content/uploads/2017/06/01-ACP-CA6.pdf
@@ -72652,13 +72631,6 @@ Potentiometer vertical Vishay T73YP
 0
 3
 3
-RF
-QFN50P300X300X60-17N
-
-
-0
-17
-17
 RF
 Skyworks_SKY13575_639LF
 http://www.skyworksinc.com/uploads/documents/SKY13575_639LF_203270D.pdf
