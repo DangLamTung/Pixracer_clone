@@ -62,10 +62,6 @@ Text GLabel 1150 3000 0    50   Input ~ 0
 OSC1+
 Text GLabel 1150 3100 0    50   Input ~ 0
 OSC1-
-Text GLabel 3150 2500 2    50   Input ~ 0
-UART1_TX
-Text GLabel 3150 2600 2    50   Input ~ 0
-UART1_RX
 Text GLabel 3150 3000 2    50   Input ~ 0
 SWCLK
 Text GLabel 3150 2900 2    50   Input ~ 0
@@ -389,10 +385,6 @@ Wire Wire Line
 	3100 4500 3250 4500
 Text GLabel 3250 3600 2    50   Input ~ 0
 SPI3_SCK
-Wire Wire Line
-	3100 2500 3150 2500
-Wire Wire Line
-	3100 2600 3150 2600
 Text GLabel 3250 5600 2    50   Input ~ 0
 UART6_TX
 Text GLabel 3250 5700 2    50   Input ~ 0
