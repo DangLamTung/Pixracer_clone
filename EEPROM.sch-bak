@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 11
+Sheet 6 11
 Title ""
 Date ""
 Rev ""
@@ -21,7 +21,7 @@ AR Path="/5F6CB4BA" Ref="U?"  Part="1"
 AR Path="/5F5AF088/5F6CB4BA" Ref="U9"  Part="1" 
 F 0 "U9" H 5250 4231 50  0000 C CNN
 F 1 "25LCxxx" H 5250 4140 50  0000 C CNN
-F 2 "" H 5250 3750 50  0001 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 5250 3750 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21832H.pdf" H 5250 3750 50  0001 C CNN
 	1    5250 3750
 	1    0    0    -1  

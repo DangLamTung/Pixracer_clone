@@ -144,7 +144,7 @@ AR Path="/5F5517E4/5F55D536" Ref="J7"  Part="1"
 AR Path="/5F5C31DE/5F55D536" Ref="J?"  Part="1" 
 F 0 "J7" H 6672 4028 50  0000 R CNN
 F 1 "Conn_01x03_Male" H 6672 4073 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6700 4050 50  0001 C CNN
+F 2 "Connector_JST:JST_SH_BM03B-SRSS-TB_1x03-1MP_P1.00mm_Vertical" H 6700 4050 50  0001 C CNN
 F 3 "~" H 6700 4050 50  0001 C CNN
 	1    6700 4050
 	-1   0    0    1   

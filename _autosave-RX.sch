@@ -468,7 +468,7 @@ AR Path="/5F5EB1A4/5F5DC341" Ref="J?"  Part="1"
 AR Path="/5FC6E587/5F5DC341" Ref="J?"  Part="1" 
 F 0 "J10" H 4322 4382 50  0000 R CNN
 F 1 "Conn_01x04_Male" H 4322 4473 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4350 4500 50  0001 C CNN
+F 2 "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal" H 4350 4500 50  0001 C CNN
 F 3 "~" H 4350 4500 50  0001 C CNN
 	1    4350 4500
 	-1   0    0    1   
@@ -627,7 +627,7 @@ AR Path="/5F5EB1A4/5FCA6E71" Ref="J?"  Part="1"
 AR Path="/5FC6E587/5FCA6E71" Ref="J?"  Part="1" 
 F 0 "J15" H 5472 6382 50  0000 R CNN
 F 1 "UART4_con" V 5472 6473 50  0001 R CNN
-F 2 "Connector_JST:JST_ZE_SM04B-ZESS-TB_1x04-1MP_P1.50mm_Horizontal" H 5500 6500 50  0001 C CNN
+F 2 "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal" H 5500 6500 50  0001 C CNN
 F 3 "~" H 5500 6500 50  0001 C CNN
 	1    5500 6500
 	-1   0    0    1   

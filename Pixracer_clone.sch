@@ -379,10 +379,10 @@ Wire Wire Line
 	1300 6400 1200 6400
 Wire Wire Line
 	1300 6500 1200 6500
-Text GLabel 3250 4500 2    50   Input ~ 0
+Text GLabel 1150 6000 0    50   Input ~ 0
 EXTERNAL_MEM_CS
 Wire Wire Line
-	3100 4500 3250 4500
+	1300 6000 1150 6000
 Text GLabel 3250 3600 2    50   Input ~ 0
 SPI3_SCK
 Text GLabel 3250 5600 2    50   Input ~ 0
