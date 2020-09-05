@@ -79,35 +79,10 @@ Wire Wire Line
 	2000 5400 2000 5450
 Wire Wire Line
 	2000 5450 1900 5450
-Wire Wire Line
-	1900 5550 2050 5550
-Wire Wire Line
-	2050 5550 2050 5450
-Wire Wire Line
-	2050 5450 2100 5450
 Text GLabel 4100 5100 2    50   Input ~ 0
 MPU9250_DRDY
-$Comp
-L Device:R R?
-U 1 1 5F5A50E3
-P 2100 4750
-AR Path="/5F3218EE/5F5A50E3" Ref="R?"  Part="1" 
-AR Path="/5F5A50E3" Ref="R?"  Part="1" 
-AR Path="/5F584BC5/5F5A50E3" Ref="R4"  Part="1" 
-AR Path="/5F5AF088/5F5A50E3" Ref="R?"  Part="1" 
-F 0 "R4" H 2170 4796 50  0000 L CNN
-F 1 "R" H 2170 4705 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 2030 4750 50  0001 C CNN
-F 3 "~" H 2100 4750 50  0001 C CNN
-	1    2100 4750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2100 4900 2100 5450
 Wire Wire Line
 	3350 4400 3200 4400
-Wire Wire Line
-	2100 4200 2100 4600
 Wire Wire Line
 	4300 6050 4300 5950
 $Comp
@@ -182,12 +157,9 @@ Wire Wire Line
 Wire Wire Line
 	2550 6100 2700 6100
 Wire Wire Line
-	2050 5550 2400 5550
-Wire Wire Line
 	2400 5550 2400 5400
 Wire Wire Line
 	2400 5400 2550 5400
-Connection ~ 2050 5550
 Wire Wire Line
 	4100 5100 3950 5100
 Wire Wire Line
@@ -204,8 +176,6 @@ Wire Wire Line
 Wire Wire Line
 	4600 4200 3200 4200
 Connection ~ 3200 4200
-Wire Wire Line
-	2100 4200 3200 4200
 Wire Wire Line
 	3950 5600 4300 5600
 Wire Wire Line
@@ -637,35 +607,9 @@ F 3 "" H 2200 1650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2200 1800 2200 1650
-$Comp
-L Device:R R?
-U 1 1 5F5A522A
-P 1650 1750
-AR Path="/5F3218EE/5F5A522A" Ref="R?"  Part="1" 
-AR Path="/5F5A522A" Ref="R?"  Part="1" 
-AR Path="/5F584BC5/5F5A522A" Ref="R3"  Part="1" 
-AR Path="/5F5AF088/5F5A522A" Ref="R?"  Part="1" 
-F 0 "R3" H 1720 1796 50  0000 L CNN
-F 1 "R" H 1720 1705 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 1580 1750 50  0001 C CNN
-F 3 "~" H 1650 1750 50  0001 C CNN
-	1    1650 1750
-	1    0    0    -1  
-$EndComp
+	2200 1800 2200 1700
 Wire Wire Line
 	2400 1400 2600 1400
-Wire Wire Line
-	1550 2500 1650 2500
-Wire Wire Line
-	1650 1400 1650 1600
-Wire Wire Line
-	1650 1400 2400 1400
-Wire Wire Line
-	1650 1900 1650 2500
-Connection ~ 1650 2500
-Wire Wire Line
-	1650 2500 1800 2500
 $Comp
 L Device:CP C?
 U 1 1 5F5A5237
@@ -1007,4 +951,43 @@ Wire Wire Line
 Connection ~ 7450 1700
 Wire Wire Line
 	7450 1700 7650 1700
+$Comp
+L Device:C C?
+U 1 1 5F5A8609
+P 2050 1700
+AR Path="/5F3218EE/5F5A8609" Ref="C?"  Part="1" 
+AR Path="/5F5A8609" Ref="C?"  Part="1" 
+AR Path="/5F584BC5/5F5A8609" Ref="C42"  Part="1" 
+AR Path="/5F5AF088/5F5A8609" Ref="C?"  Part="1" 
+F 0 "C42" H 2165 1746 50  0000 L CNN
+F 1 "0.1uF" H 2165 1655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2088 1550 50  0001 C CNN
+F 3 "~" H 2050 1700 50  0001 C CNN
+	1    2050 1700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1900 1700 1800 1700
+$Comp
+L power:GND #PWR?
+U 1 1 5F5A8610
+P 1800 1700
+AR Path="/5F3218EE/5F5A8610" Ref="#PWR?"  Part="1" 
+AR Path="/5F5A8610" Ref="#PWR?"  Part="1" 
+AR Path="/5F584BC5/5F5A8610" Ref="#PWR0182"  Part="1" 
+AR Path="/5F5AF088/5F5A8610" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0182" H 1800 1450 50  0001 C CNN
+F 1 "GND" H 1805 1527 50  0000 C CNN
+F 2 "" H 1800 1700 50  0001 C CNN
+F 3 "" H 1800 1700 50  0001 C CNN
+	1    1800 1700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1550 2500 1800 2500
+Connection ~ 2200 1700
+Wire Wire Line
+	2200 1700 2200 1650
+Wire Wire Line
+	1900 5550 2400 5550
 $EndSCHEMATC

@@ -214,7 +214,7 @@ AR Path="/5F53A524/5F52346F" Ref="J?"  Part="1"
 AR Path="/5F5517E4/5F52346F" Ref="J?"  Part="1" 
 F 0 "J1" H 6958 3181 50  0000 C CNN
 F 1 "Conn_01x03_Male" H 6958 3090 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6850 2900 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical_SMD_Pin1Left" H 6850 2900 50  0001 C CNN
 F 3 "~" H 6850 2900 50  0001 C CNN
 	1    6850 2900
 	1    0    0    -1  
@@ -477,7 +477,7 @@ AR Path="/5F53A524/5F5234E4" Ref="C?"  Part="1"
 AR Path="/5F5517E4/5F5234E4" Ref="C?"  Part="1" 
 F 0 "C3" V 4605 4600 50  0000 C CNN
 F 1 "CP" V 4514 4600 50  0000 C CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 4388 4450 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4388 4450 50  0001 C CNN
 F 3 "~" H 4350 4600 50  0001 C CNN
 	1    4350 4600
 	1    0    0    -1  
@@ -493,7 +493,7 @@ AR Path="/5F53A524/5F5234EA" Ref="C?"  Part="1"
 AR Path="/5F5517E4/5F5234EA" Ref="C?"  Part="1" 
 F 0 "C1" H 4168 4646 50  0000 L CNN
 F 1 "CP" H 4168 4555 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 4088 4450 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4088 4450 50  0001 C CNN
 F 3 "~" H 4050 4600 50  0001 C CNN
 	1    4050 4600
 	1    0    0    -1  

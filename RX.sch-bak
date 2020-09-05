@@ -446,7 +446,7 @@ AR Path="/5F5EB1A4/5F5DC338" Ref="J?"  Part="1"
 AR Path="/5FC6E587/5F5DC338" Ref="J?"  Part="1" 
 F 0 "J17" H 8072 2682 50  0000 R CNN
 F 1 "Conn_01x06_Male" H 8072 2773 50  0000 R CNN
-F 2 "Connector_JST:JST_ZE_BM06B-ZESS-TBT_1x06-1MP_P1.50mm_Vertical" H 8100 2800 50  0001 C CNN
+F 2 "Connector_JST:JST_SH_SM06B-SRSS-TB_1x06-1MP_P1.00mm_Horizontal" H 8100 2800 50  0001 C CNN
 F 3 "~" H 8100 2800 50  0001 C CNN
 	1    8100 2800
 	-1   0    0    1   
@@ -500,7 +500,7 @@ AR Path="/5F5EB1A4/5F5DC34D" Ref="J?"  Part="1"
 AR Path="/5FC6E587/5F5DC34D" Ref="J?"  Part="1" 
 F 0 "J16" H 6722 3132 50  0000 R CNN
 F 1 "UART4_con" V 6722 3223 50  0001 R CNN
-F 2 "Connector_JST:JST_PH_B4B-PH-SM4-TB_1x04-1MP_P2.00mm_Vertical" H 6750 3250 50  0001 C CNN
+F 2 "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal" H 6750 3250 50  0001 C CNN
 F 3 "~" H 6750 3250 50  0001 C CNN
 	1    6750 3250
 	-1   0    0    1   
@@ -691,4 +691,60 @@ F 3 "" H 4000 6050 50  0001 C CNN
 	1    4000 6050
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:Conn_01x04_Male J?
+U 1 1 5F59E3F0
+P 3350 2450
+AR Path="/5F59E3F0" Ref="J?"  Part="1" 
+AR Path="/5F3AD1EC/5F59E3F0" Ref="J?"  Part="1" 
+AR Path="/5F5C31DE/5F59E3F0" Ref="J12"  Part="1" 
+AR Path="/5F5EB1A4/5F59E3F0" Ref="J?"  Part="1" 
+AR Path="/5FC6E587/5F59E3F0" Ref="J?"  Part="1" 
+F 0 "J12" H 3322 2332 50  0000 R CNN
+F 1 "Conn_01x04_Male" H 3322 2423 50  0000 R CNN
+F 2 "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal" H 3350 2450 50  0001 C CNN
+F 3 "~" H 3350 2450 50  0001 C CNN
+	1    3350 2450
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5F59EEF2
+P 3000 2150
+AR Path="/5F59EEF2" Ref="#PWR?"  Part="1" 
+AR Path="/5F3AD1EC/5F59EEF2" Ref="#PWR?"  Part="1" 
+AR Path="/5F5C31DE/5F59EEF2" Ref="#PWR0119"  Part="1" 
+AR Path="/5F5EB1A4/5F59EEF2" Ref="#PWR?"  Part="1" 
+AR Path="/5FC6E587/5F59EEF2" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0119" H 3000 2000 50  0001 C CNN
+F 1 "VCC" H 3015 2323 50  0000 C CNN
+F 2 "" H 3000 2150 50  0001 C CNN
+F 3 "" H 3000 2150 50  0001 C CNN
+	1    3000 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F59F950
+P 3000 2600
+AR Path="/5F59F950" Ref="#PWR?"  Part="1" 
+AR Path="/5F3AD1EC/5F59F950" Ref="#PWR?"  Part="1" 
+AR Path="/5F5C31DE/5F59F950" Ref="#PWR0162"  Part="1" 
+AR Path="/5F5EB1A4/5F59F950" Ref="#PWR?"  Part="1" 
+AR Path="/5FC6E587/5F59F950" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0162" H 3000 2350 50  0001 C CNN
+F 1 "GND" H 3005 2427 50  0000 C CNN
+F 2 "" H 3000 2600 50  0001 C CNN
+F 3 "" H 3000 2600 50  0001 C CNN
+	1    3000 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 2250 3000 2250
+Wire Wire Line
+	3000 2250 3000 2150
+Wire Wire Line
+	3000 2600 3000 2550
+Wire Wire Line
+	3000 2550 3150 2550
 $EndSCHEMATC

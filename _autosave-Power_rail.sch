@@ -144,7 +144,7 @@ AR Path="/5F5517E4/5F55D536" Ref="J7"  Part="1"
 AR Path="/5F5C31DE/5F55D536" Ref="J?"  Part="1" 
 F 0 "J7" H 6672 4028 50  0000 R CNN
 F 1 "Conn_01x03_Male" H 6672 4073 50  0001 R CNN
-F 2 "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical" H 6700 4050 50  0001 C CNN
+F 2 "Connector_JST:JST_SH_BM03B-SRSS-TB_1x03-1MP_P1.00mm_Vertical" H 6700 4050 50  0001 C CNN
 F 3 "~" H 6700 4050 50  0001 C CNN
 	1    6700 4050
 	-1   0    0    1   
@@ -191,9 +191,9 @@ F 3 "~" H 5150 3400 50  0001 C CNN
 	1    5150 3400
 	1    0    0    -1  
 $EndComp
-Text GLabel 3500 4250 0    50   Input ~ 0
-TIM3_CH2
 Text GLabel 3500 4150 0    50   Input ~ 0
+TIM3_CH2
+Text GLabel 3500 4250 0    50   Input ~ 0
 TIM3_CH3
 Wire Wire Line
 	4200 3650 4200 3500
@@ -286,9 +286,9 @@ F 3 "~" H 4050 4050 50  0001 C CNN
 	1    4050 4050
 	-1   0    0    1   
 $EndComp
-Text GLabel 3500 4350 0    50   Input ~ 0
-TIM3_CH1
 Text GLabel 3500 4050 0    50   Input ~ 0
+TIM3_CH1
+Text GLabel 3500 4350 0    50   Input ~ 0
 TIM3_CH4
 Text GLabel 3500 3650 0    50   Input ~ 0
 TIM1_CH1
