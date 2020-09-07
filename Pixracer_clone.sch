@@ -379,10 +379,10 @@ Wire Wire Line
 	1300 6400 1200 6400
 Wire Wire Line
 	1300 6500 1200 6500
-Text GLabel 1150 6000 0    50   Input ~ 0
+Text GLabel 3250 4500 2    50   Input ~ 0
 EXTERNAL_MEM_CS
 Wire Wire Line
-	1300 6000 1150 6000
+	3100 4500 3250 4500
 Text GLabel 3250 3600 2    50   Input ~ 0
 SPI3_SCK
 Text GLabel 3250 5600 2    50   Input ~ 0
@@ -478,7 +478,7 @@ Wire Wire Line
 Text GLabel 1150 3600 0    50   Input ~ 0
 SPI4_CE
 Text GLabel 1150 3700 0    50   Input ~ 0
-SPI4_MOSI
+SPI4_CS
 Wire Wire Line
 	1150 3600 1300 3600
 Wire Wire Line
@@ -491,4 +491,8 @@ Text GLabel 3800 1700 2    50   Input ~ 0
 SBUS
 Wire Wire Line
 	3100 1700 3800 1700
+Text GLabel 1150 4500 0    50   Input ~ 0
+EXTERNAL_MPU_CS
+Wire Wire Line
+	1150 4500 1300 4500
 $EndSCHEMATC

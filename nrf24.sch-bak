@@ -24,15 +24,145 @@ F 3 "http://www.nordicsemi.com/eng/content/download/2730/34105/file/nRF24L01_Pro
 	1    4050 3700
 	1    0    0    -1  
 $EndComp
+Text GLabel 3400 3500 0    50   Input ~ 0
+SPI4_MISO
+Text GLabel 3400 3400 0    50   Input ~ 0
+SPI4_MOSI
+Text GLabel 3400 3600 0    50   Input ~ 0
+SPI4_CLK
+Wire Wire Line
+	3550 3600 3400 3600
+Wire Wire Line
+	3550 3500 3400 3500
+Wire Wire Line
+	3550 3400 3400 3400
+Text GLabel 3400 3900 0    50   Input ~ 0
+SPI4_CE
+Text GLabel 3400 3700 0    50   Input ~ 0
+SPI4_CS
+Wire Wire Line
+	3400 3900 3550 3900
+Wire Wire Line
+	3550 3700 3400 3700
 $Comp
-L power:+5V #PWR0161
-U 1 1 5FD4C9DA
-P 7850 2650
-F 0 "#PWR0161" H 7850 2500 50  0001 C CNN
-F 1 "+5V" H 7865 2823 50  0000 C CNN
-F 2 "" H 7850 2650 50  0001 C CNN
-F 3 "" H 7850 2650 50  0001 C CNN
-	1    7850 2650
+L Device:C C?
+U 1 1 5F5DC7F7
+P 1650 2950
+AR Path="/5F5DC7F7" Ref="C?"  Part="1" 
+AR Path="/5F569749/5F5DC7F7" Ref="C?"  Part="1" 
+AR Path="/5F3218EE/5F5DC7F7" Ref="C?"  Part="1" 
+AR Path="/5F584BC5/5F5DC7F7" Ref="C?"  Part="1" 
+AR Path="/5F5AF088/5F5DC7F7" Ref="C?"  Part="1" 
+AR Path="/5FD47887/5F5DC7F7" Ref="C15"  Part="1" 
+F 0 "C15" H 1765 2996 50  0000 L CNN
+F 1 "1uF" H 1765 2905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1688 2800 50  0001 C CNN
+F 3 "~" H 1650 2950 50  0001 C CNN
+	1    1650 2950
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2300 3250 2300 3400
+$Comp
+L power:GND #PWR?
+U 1 1 5F5DC7FE
+P 2300 3400
+AR Path="/5F3218EE/5F5DC7FE" Ref="#PWR?"  Part="1" 
+AR Path="/5F5DC7FE" Ref="#PWR?"  Part="1" 
+AR Path="/5F584BC5/5F5DC7FE" Ref="#PWR?"  Part="1" 
+AR Path="/5F5AF088/5F5DC7FE" Ref="#PWR?"  Part="1" 
+AR Path="/5FD47887/5F5DC7FE" Ref="#PWR0161"  Part="1" 
+F 0 "#PWR0161" H 2300 3150 50  0001 C CNN
+F 1 "GND" H 2305 3227 50  0000 C CNN
+F 2 "" H 2300 3400 50  0001 C CNN
+F 3 "" H 2300 3400 50  0001 C CNN
+	1    2300 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F5DC804
+P 1650 2650
+AR Path="/5F3218EE/5F5DC804" Ref="#PWR?"  Part="1" 
+AR Path="/5F5DC804" Ref="#PWR?"  Part="1" 
+AR Path="/5F584BC5/5F5DC804" Ref="#PWR?"  Part="1" 
+AR Path="/5F5AF088/5F5DC804" Ref="#PWR?"  Part="1" 
+AR Path="/5FD47887/5F5DC804" Ref="#PWR0183"  Part="1" 
+F 0 "#PWR0183" H 1650 2500 50  0001 C CNN
+F 1 "+5V" H 1665 2823 50  0000 C CNN
+F 2 "" H 1650 2650 50  0001 C CNN
+F 3 "" H 1650 2650 50  0001 C CNN
+	1    1650 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 2800 1650 2650
+Connection ~ 1650 2800
+$Comp
+L Regulator_Linear:LP5907MFX-3.3 U?
+U 1 1 5F5DC80C
+P 2300 2900
+AR Path="/5F584BC5/5F5DC80C" Ref="U?"  Part="1" 
+AR Path="/5FD47887/5F5DC80C" Ref="U2"  Part="1" 
+F 0 "U2" H 2300 3267 50  0000 C CNN
+F 1 "LP5907MFX-3.3" H 2300 3176 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 2300 3250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lp5907.pdf" H 2300 3400 50  0001 C CNN
+	1    2300 2900
+	1    0    0    -1  
+$EndComp
+Connection ~ 2300 3250
+Wire Wire Line
+	1650 3250 2300 3250
+Wire Wire Line
+	2300 3250 2750 3250
+Wire Wire Line
+	2300 3250 2300 3200
+Wire Wire Line
+	1650 3100 1650 3250
+Wire Wire Line
+	1650 2800 2000 2800
+Text GLabel 1850 3450 0    50   Input ~ 0
+3.3_SENSE_EN
+Wire Wire Line
+	1850 3450 1950 3450
+Wire Wire Line
+	1950 3450 1950 2900
+Wire Wire Line
+	1950 2900 2000 2900
+Wire Wire Line
+	4050 3100 4050 2750
+Wire Wire Line
+	4050 2750 2750 2750
+Wire Wire Line
+	2600 2750 2600 2800
+Wire Wire Line
+	2750 3250 2750 4300
+Wire Wire Line
+	2750 4300 4050 4300
+$Comp
+L Device:C C?
+U 1 1 5F5DE676
+P 2750 2950
+AR Path="/5F5DE676" Ref="C?"  Part="1" 
+AR Path="/5F569749/5F5DE676" Ref="C?"  Part="1" 
+AR Path="/5F3218EE/5F5DE676" Ref="C?"  Part="1" 
+AR Path="/5F584BC5/5F5DE676" Ref="C?"  Part="1" 
+AR Path="/5F5AF088/5F5DE676" Ref="C?"  Part="1" 
+AR Path="/5FD47887/5F5DE676" Ref="C43"  Part="1" 
+F 0 "C43" H 2865 2996 50  0000 L CNN
+F 1 "1uF" H 2865 2905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2788 2800 50  0001 C CNN
+F 3 "~" H 2750 2950 50  0001 C CNN
+	1    2750 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 3100 2750 3250
+Connection ~ 2750 3250
+Wire Wire Line
+	2750 2800 2750 2750
+Connection ~ 2750 2750
+Wire Wire Line
+	2750 2750 2600 2750
 $EndSCHEMATC

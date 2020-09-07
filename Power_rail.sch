@@ -103,97 +103,33 @@ Buzzer
 $Comp
 L power:GND #PWR?
 U 1 1 5F55D528
-P 6250 4250
+P 6300 4350
 AR Path="/5F55D528" Ref="#PWR?"  Part="1" 
 AR Path="/5F41B667/5F55D528" Ref="#PWR?"  Part="1" 
 AR Path="/5F5517E4/5F55D528" Ref="#PWR0117"  Part="1" 
 AR Path="/5F5C31DE/5F55D528" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0117" H 6250 4000 50  0001 C CNN
-F 1 "GND" H 6255 4077 50  0000 C CNN
-F 2 "" H 6250 4250 50  0001 C CNN
-F 3 "" H 6250 4250 50  0001 C CNN
-	1    6250 4250
+F 0 "#PWR0117" H 6300 4100 50  0001 C CNN
+F 1 "GND" H 6305 4177 50  0000 C CNN
+F 2 "" H 6300 4350 50  0001 C CNN
+F 3 "" H 6300 4350 50  0001 C CNN
+	1    6300 4350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6400 3950 6500 3950
+	6450 3950 6550 3950
 Wire Wire Line
-	6400 3900 6400 3950
-$Comp
-L power:VCC #PWR?
-U 1 1 5F55D530
-P 6400 3900
-AR Path="/5F55D530" Ref="#PWR?"  Part="1" 
-AR Path="/5F41B667/5F55D530" Ref="#PWR?"  Part="1" 
-AR Path="/5F5517E4/5F55D530" Ref="#PWR0118"  Part="1" 
-AR Path="/5F5C31DE/5F55D530" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0118" H 6400 3750 50  0001 C CNN
-F 1 "VCC" H 6415 4073 50  0000 C CNN
-F 2 "" H 6400 3900 50  0001 C CNN
-F 3 "" H 6400 3900 50  0001 C CNN
-	1    6400 3900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x03_Male J?
-U 1 1 5F55D536
-P 6700 4050
-AR Path="/5F55D536" Ref="J?"  Part="1" 
-AR Path="/5F41B667/5F55D536" Ref="J?"  Part="1" 
-AR Path="/5F5517E4/5F55D536" Ref="J7"  Part="1" 
-AR Path="/5F5C31DE/5F55D536" Ref="J?"  Part="1" 
-F 0 "J7" H 6672 4028 50  0000 R CNN
-F 1 "Conn_01x03_Male" H 6672 4073 50  0001 R CNN
-F 2 "Connector_JST:JST_SH_BM03B-SRSS-TB_1x03-1MP_P1.00mm_Vertical" H 6700 4050 50  0001 C CNN
-F 3 "~" H 6700 4050 50  0001 C CNN
-	1    6700 4050
-	-1   0    0    1   
-$EndComp
+	6450 3900 6450 3950
 Wire Wire Line
-	6250 4150 6250 4250
+	6300 4250 6300 4350
 Wire Wire Line
-	6500 4150 6250 4150
+	6550 4250 6300 4250
 Wire Wire Line
-	6350 4050 6500 4050
-Text GLabel 6350 4050 0    50   Input ~ 0
+	6400 4050 6550 4050
+Text GLabel 6400 4050 0    50   Input ~ 0
 SBUS_DEVICE
-Wire Wire Line
-	5550 3500 5550 3550
-Wire Wire Line
-	5350 3500 5550 3500
-$Comp
-L power:GND #PWR?
-U 1 1 5F55D548
-P 5550 3550
-AR Path="/5F55D548" Ref="#PWR?"  Part="1" 
-AR Path="/5F41B667/5F55D548" Ref="#PWR?"  Part="1" 
-AR Path="/5F5517E4/5F55D548" Ref="#PWR0120"  Part="1" 
-AR Path="/5F5C31DE/5F55D548" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0120" H 5550 3300 50  0001 C CNN
-F 1 "GND" H 5555 3377 50  0000 C CNN
-F 2 "" H 5550 3550 50  0001 C CNN
-F 3 "" H 5550 3550 50  0001 C CNN
-	1    5550 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x02_Male J?
-U 1 1 5F55D550
-P 5150 3400
-AR Path="/5F55D550" Ref="J?"  Part="1" 
-AR Path="/5F41B667/5F55D550" Ref="J?"  Part="1" 
-AR Path="/5F5517E4/5F55D550" Ref="J6"  Part="1" 
-AR Path="/5F5C31DE/5F55D550" Ref="J?"  Part="1" 
-F 0 "J6" H 5258 3581 50  0000 C CNN
-F 1 "Conn_01x02_Male" H 5258 3490 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5150 3400 50  0001 C CNN
-F 3 "~" H 5150 3400 50  0001 C CNN
-	1    5150 3400
-	1    0    0    -1  
-$EndComp
-Text GLabel 3500 4250 0    50   Input ~ 0
-TIM3_CH2
 Text GLabel 3500 4150 0    50   Input ~ 0
+TIM3_CH2
+Text GLabel 3500 4250 0    50   Input ~ 0
 TIM3_CH3
 Wire Wire Line
 	4200 3650 4200 3500
@@ -286,9 +222,9 @@ F 3 "~" H 4050 4050 50  0001 C CNN
 	1    4050 4050
 	-1   0    0    1   
 $EndComp
-Text GLabel 3500 4350 0    50   Input ~ 0
-TIM3_CH1
 Text GLabel 3500 4050 0    50   Input ~ 0
+TIM3_CH1
+Text GLabel 3500 4350 0    50   Input ~ 0
 TIM3_CH4
 Text GLabel 3500 3650 0    50   Input ~ 0
 TIM1_CH1
@@ -314,23 +250,6 @@ F 3 "~" H 3700 4050 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:Fuse F?
-U 1 1 5FD15056
-P 5550 3400
-AR Path="/5F5EB1A4/5FD15056" Ref="F?"  Part="1" 
-AR Path="/5F5517E4/5FD15056" Ref="F1"  Part="1" 
-F 0 "F1" V 5747 3400 50  0000 C CNN
-F 1 "Fuse" V 5656 3400 50  0000 C CNN
-F 2 "Fuse:Fuse_1812_4532Metric" V 5480 3400 50  0001 C CNN
-F 3 "~" H 5550 3400 50  0001 C CNN
-	1    5550 3400
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5350 3400 5400 3400
-Wire Wire Line
-	5700 3400 5800 3400
-$Comp
 L power:+5V #PWR0116
 U 1 1 5FD19386
 P 8350 3400
@@ -341,6 +260,26 @@ F 3 "" H 8350 3400 50  0001 C CNN
 	1    8350 3400
 	1    0    0    -1  
 $EndComp
-Text GLabel 5800 3400 2    50   Input ~ 0
-5V_IN
+$Comp
+L power:+5V #PWR0118
+U 1 1 5F5AC45D
+P 6450 3900
+F 0 "#PWR0118" H 6450 3750 50  0001 C CNN
+F 1 "+5V" H 6465 4073 50  0000 C CNN
+F 2 "" H 6450 3900 50  0001 C CNN
+F 3 "" H 6450 3900 50  0001 C CNN
+	1    6450 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J7
+U 1 1 5F5AC9EF
+P 6750 4150
+F 0 "J7" H 6722 4032 50  0000 R CNN
+F 1 "Conn_01x04_Male" H 6722 4123 50  0000 R CNN
+F 2 "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal" H 6750 4150 50  0001 C CNN
+F 3 "~" H 6750 4150 50  0001 C CNN
+	1    6750 4150
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
