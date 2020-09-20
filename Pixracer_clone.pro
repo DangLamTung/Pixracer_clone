@@ -1,4 +1,4 @@
-update=9/7/2020 1:30:42 PM
+update=8/9/2020 10:26:30 PM
 version=1
 last_client=kicad
 [general]
@@ -31,8 +31,10 @@ MinHoleToHole=0.25
 TrackWidth1=0.25
 TrackWidth2=0.15
 TrackWidth3=0.1524
-TrackWidth4=0.5
-TrackWidth5=1
+TrackWidth4=0.254
+TrackWidth5=0.5
+TrackWidth6=0.8
+TrackWidth7=1
 ViaDiameter1=0.6
 ViaDrill1=0.3
 dPairWidth1=0.2
@@ -244,6 +246,17 @@ dPairViaGap=0.25
 Name=OSC
 Clearance=0.15
 TrackWidth=0.25
+ViaDiameter=0.6
+ViaDrill=0.3
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/2]
+Name=USB
+Clearance=0.2032
+TrackWidth=0.1524
 ViaDiameter=0.6
 ViaDrill=0.3
 uViaDiameter=0.3
