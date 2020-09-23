@@ -990,4 +990,71 @@ Wire Wire Line
 	2200 1700 2200 1650
 Wire Wire Line
 	1900 5550 2400 5550
+$Comp
+L power:+5V #PWR?
+U 1 1 5F649538
+P 5450 3350
+AR Path="/5F3218EE/5F649538" Ref="#PWR?"  Part="1" 
+AR Path="/5F649538" Ref="#PWR?"  Part="1" 
+AR Path="/5F584BC5/5F649538" Ref="#PWR0188"  Part="1" 
+AR Path="/5F5AF088/5F649538" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0188" H 5450 3200 50  0001 C CNN
+F 1 "+5V" H 5465 3523 50  0000 C CNN
+F 2 "" H 5450 3350 50  0001 C CNN
+F 3 "" H 5450 3350 50  0001 C CNN
+	1    5450 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 3500 5450 3500
+Wire Wire Line
+	5450 3500 5450 3350
+$Comp
+L power:GND #PWR0189
+U 1 1 5F65131E
+P 5500 3600
+F 0 "#PWR0189" H 5500 3350 50  0001 C CNN
+F 1 "GND" V 5505 3472 50  0000 R CNN
+F 2 "" H 5500 3600 50  0001 C CNN
+F 3 "" H 5500 3600 50  0001 C CNN
+	1    5500 3600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5350 3600 5500 3600
+$Comp
+L Connector:Conn_01x10_Male J23
+U 1 1 5F659907
+P 5150 3900
+F 0 "J23" H 5258 4481 50  0000 C CNN
+F 1 "Conn_01x10_Male" H 5258 4390 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 5150 3900 50  0001 C CNN
+F 3 "~" H 5150 3900 50  0001 C CNN
+	1    5150 3900
+	1    0    0    -1  
+$EndComp
+Text GLabel 5350 3800 2    50   Input ~ 0
+IMU_MOSI
+Text GLabel 5350 4100 2    50   Input ~ 0
+IMU_MISO
+Text GLabel 5350 3700 2    50   Input ~ 0
+IMU_CLK
+Text GLabel 5350 4300 2    50   Input ~ 0
+EXTERNAL_MPU_CS
+Text GLabel 5600 4200 2    50   Input ~ 0
+ICM20948_CS
+Wire Wire Line
+	5600 4200 5350 4200
+Text GLabel 5600 4000 2    50   Input ~ 0
+LSM6D3_CS
+Wire Wire Line
+	5600 4000 5350 4000
+Text GLabel 5850 3900 2    50   Input ~ 0
+MPU9250_CS
+Wire Wire Line
+	5850 3900 5350 3900
+Text GLabel 5500 4400 2    50   Input ~ 0
+3.3_SENSE_EN
+Wire Wire Line
+	5350 4400 5500 4400
 $EndSCHEMATC

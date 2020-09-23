@@ -214,7 +214,7 @@ AR Path="/5F53A524/5F52346F" Ref="J?"  Part="1"
 AR Path="/5F5517E4/5F52346F" Ref="J?"  Part="1" 
 F 0 "J1" H 6958 3181 50  0000 C CNN
 F 1 "Conn_01x03_Male" H 6958 3090 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6850 2900 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical_SMD_Pin1Left" H 6850 2900 50  0001 C CNN
 F 3 "~" H 6850 2900 50  0001 C CNN
 	1    6850 2900
 	1    0    0    -1  

@@ -179,33 +179,18 @@ Wire Notes Line
 Connection ~ 6850 4200
 Connection ~ 4150 4200
 $Comp
-L pspice:DIODE D?
-U 1 1 5F5FCF99
-P 3500 4000
-AR Path="/5F5FCF99" Ref="D?"  Part="1" 
-AR Path="/5F569749/5F5FCF99" Ref="D?"  Part="1" 
-AR Path="/5F5EB1A4/5F5FCF99" Ref="D2"  Part="1" 
-AR Path="/5F6068B8/5F5FCF99" Ref="D?"  Part="1" 
-F 0 "D2" V 3454 4128 50  0000 L CNN
-F 1 "DIODE" V 3545 4128 50  0000 L CNN
-F 2 "Diode_SMD:D_1206_3216Metric" H 3500 4000 50  0001 C CNN
-F 3 "~" H 3500 4000 50  0001 C CNN
-	1    3500 4000
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+5V #PWR?
 U 1 1 5F5FCF9F
-P 3200 3850
+P 2750 3850
 AR Path="/5F5FCF9F" Ref="#PWR?"  Part="1" 
 AR Path="/5F569749/5F5FCF9F" Ref="#PWR?"  Part="1" 
 AR Path="/5F5EB1A4/5F5FCF9F" Ref="#PWR0174"  Part="1" 
 AR Path="/5F6068B8/5F5FCF9F" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0174" H 3200 3700 50  0001 C CNN
-F 1 "+5V" H 3215 4023 50  0000 C CNN
-F 2 "" H 3200 3850 50  0001 C CNN
-F 3 "" H 3200 3850 50  0001 C CNN
-	1    3200 3850
+F 0 "#PWR0174" H 2750 3700 50  0001 C CNN
+F 1 "+5V" H 2765 4023 50  0000 C CNN
+F 2 "" H 2750 3850 50  0001 C CNN
+F 3 "" H 2750 3850 50  0001 C CNN
+	1    2750 3850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -270,14 +255,14 @@ F 3 "" H 6400 2700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6400 2850 6400 2700
-Text GLabel 3850 4200 0    50   Input ~ 0
+Text GLabel 4100 3700 1    50   Input ~ 0
 PWR_IN
 Wire Wire Line
-	3850 4200 4150 4200
+	4100 3700 4100 4000
 Wire Notes Line
 	7200 4000 7200 5100
 Wire Notes Line
-	2700 3500 2700 5100
+	2000 3500 2000 5100
 Wire Wire Line
 	4150 4200 4500 4200
 Wire Wire Line
@@ -335,7 +320,7 @@ Wire Wire Line
 Wire Wire Line
 	4150 4200 4150 4000
 Wire Wire Line
-	4150 4000 4000 4000
+	4150 4000 4100 4000
 $Comp
 L Device:Ferrite_Bead FB1
 U 1 1 5FD0A178
@@ -352,9 +337,7 @@ Wire Notes Line
 Wire Notes Line
 	2700 5100 7200 5100
 Wire Wire Line
-	3300 4000 3200 4000
-Wire Wire Line
-	3200 4000 3200 3850
+	2750 4000 2750 3850
 $Comp
 L Device:LED_RGBA D3
 U 1 1 5FDA85BA
@@ -420,7 +403,62 @@ F 3 "~" H 4650 2900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3200 4000 3100 4000
-Text GLabel 3100 4000 0    50   Input ~ 0
-5V_IN
+	2950 4100 2950 4150
+Wire Wire Line
+	2750 4100 2950 4100
+$Comp
+L power:GND #PWR?
+U 1 1 5F592851
+P 2950 4150
+AR Path="/5F592851" Ref="#PWR?"  Part="1" 
+AR Path="/5F41B667/5F592851" Ref="#PWR?"  Part="1" 
+AR Path="/5F5517E4/5F592851" Ref="#PWR?"  Part="1" 
+AR Path="/5F5C31DE/5F592851" Ref="#PWR?"  Part="1" 
+AR Path="/5F5EB1A4/5F592851" Ref="#PWR0155"  Part="1" 
+F 0 "#PWR0155" H 2950 3900 50  0001 C CNN
+F 1 "GND" H 2955 3977 50  0000 C CNN
+F 2 "" H 2950 4150 50  0001 C CNN
+F 3 "" H 2950 4150 50  0001 C CNN
+	1    2950 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5F592857
+P 2550 4000
+AR Path="/5F592857" Ref="J?"  Part="1" 
+AR Path="/5F41B667/5F592857" Ref="J?"  Part="1" 
+AR Path="/5F5517E4/5F592857" Ref="J?"  Part="1" 
+AR Path="/5F5C31DE/5F592857" Ref="J?"  Part="1" 
+AR Path="/5F5EB1A4/5F592857" Ref="J19"  Part="1" 
+F 0 "J19" H 2658 4181 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 2658 4090 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2550 4000 50  0001 C CNN
+F 3 "~" H 2550 4000 50  0001 C CNN
+	1    2550 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 4000 2800 4000
+$Comp
+L pspice:DIODE D?
+U 1 1 5F5FCF99
+P 3000 4000
+AR Path="/5F5FCF99" Ref="D?"  Part="1" 
+AR Path="/5F569749/5F5FCF99" Ref="D?"  Part="1" 
+AR Path="/5F5EB1A4/5F5FCF99" Ref="D2"  Part="1" 
+AR Path="/5F6068B8/5F5FCF99" Ref="D?"  Part="1" 
+F 0 "D2" V 2954 4128 50  0000 L CNN
+F 1 "DIODE" V 3045 4128 50  0000 L CNN
+F 2 "Diode_SMD:D_1206_3216Metric" H 3000 4000 50  0001 C CNN
+F 3 "~" H 3000 4000 50  0001 C CNN
+	1    3000 4000
+	1    0    0    -1  
+$EndComp
+Connection ~ 4100 4000
+Wire Wire Line
+	4100 4000 4000 4000
+Connection ~ 2750 4000
+Wire Wire Line
+	3200 4000 3700 4000
 $EndSCHEMATC
